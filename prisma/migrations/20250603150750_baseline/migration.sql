@@ -34,6 +34,7 @@ as $$
 begin
   -- Insert new user into public.Profile table
   -- Extract email from the auth.users record and use the same UUID
+  -- TODO: extract any other user metadata that you want to store in the Profile table
   insert into public."Profile" (id, email, name)
   values (
     new.id,
